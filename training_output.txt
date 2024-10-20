@@ -1,0 +1,5 @@
+Training completed. Do not forget to share your model on huggingface.co/models =)
+
+
+Loading best model from ./res/checkpoint-500 (score: 0.3975263237953186).
+{'train_runtime': 2541.6055, 'train_samples_per_second': 13.641, 'train_steps_per_second': 3.411, 'train_loss': 0.3042027022461853, 'epoch': 5.0}
