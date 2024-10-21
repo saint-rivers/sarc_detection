@@ -6,7 +6,6 @@ Original Code at: https://github.com/AmirAbaskohi/SemEval2022-Task6-Sarcasm-Dete
 
 1. Anaconda
 2. Python 3.7
-3. CUDA 11.3
 
 ## Setup
 
