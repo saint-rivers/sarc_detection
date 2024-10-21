@@ -63,8 +63,8 @@ class CustomTrainer(Trainer):
 
 if __name__ == '__main__':
     # dataset address
-    train = pd.read_csv('../../Data/Train_Dataset.csv')
-    test = pd.read_csv('../../Data/Test_Dataset.csv')
+    train = pd.read_csv('../Data/Train_Dataset.csv')
+    test = pd.read_csv('../Data/Test_Dataset.csv')
 
     train_tweets = train['tweet'].values.tolist()
     train_labels = train['sarcastic'].values.tolist()
@@ -85,8 +85,8 @@ if __name__ == '__main__':
     test_dataset = SarcasmDataset(test_encodings, test_labels)
 
     training_args = TrainingArguments(
-        output_dir='./res', evaluation_strategy="steps", num_train_epochs=5, per_device_train_batch_size=4,
-        per_device_eval_batch_size=4, warmup_steps=500, weight_decay=0.01,logging_dir='./logs4',
+        output_dir='./res', evaluation_strategy="steps", num_train_epochs=5, per_device_train_batch_size=8,
+        per_device_eval_batch_size=8, warmup_steps=500, weight_decay=0.01,logging_dir='./logs4',
         load_best_model_at_end=True,
     )
 
