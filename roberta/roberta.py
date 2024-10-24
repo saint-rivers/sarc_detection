@@ -63,8 +63,8 @@ class CustomTrainer(Trainer):
 
 if __name__ == '__main__':
     # dataset address
-    train = pd.read_csv('../Data/Train_Dataset.csv')
-    test = pd.read_csv('../Data/Test_Dataset.csv')
+    train = pd.read_csv('Data/Train_Dataset.csv')
+    test = pd.read_csv('Data/Test_Dataset.csv')
 
     train_tweets = train['tweet'].values.tolist()
     train_labels = train['sarcastic'].values.tolist()
