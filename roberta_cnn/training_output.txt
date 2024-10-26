@@ -1,0 +1,34 @@
+#########################
+### FOLD 1
+#########################
+2024-10-24 19:42:29.837723: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+All model checkpoint layers were used when initializing TFRobertaModel.
+All the layers of TFRobertaModel were initialized from the model checkpoint at ./pretrained-roberta-base.h5.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFRobertaModel for predictions without further training.
+2238/2238 [==============================] - 1844s 822ms/step - loss: 2.8213 - activation_loss: 1.4180 - activation_1_loss: 1.4033 - val_loss: 2.7464 - val_activation_loss: 1.3867 - val_activation_1_loss: 1.3597
+Loading model...
+Predicting OOF...
+2236/2236 [==============================] - 504s 224ms/step
+Predicting Test...
+636/636 [==============================] - 140s 221ms/step
+>>>> FOLD 1 Jaccard = 0.695358125337821
+
+
+#########################
+### FOLD 2
+#########################
+All model checkpoint layers were used when initializing TFRobertaModel.
+
+All the layers of TFRobertaModel were initialized from the model checkpoint at ./pretrained-roberta-base.h5.
+If your task is similar to the task the model of the checkpoint was trained on, you can already use TFRobertaModel for predictions without further training.
+2236/2236 [==============================] - 1739s 776ms/step - loss: 2.8018 - activation_loss: 1.4136 - activation_1_loss: 1.3882 - val_loss: 2.7114 - val_activation_loss: 1.3714 - val_activation_1_loss: 1.3401
+Loading model...
+Predicting OOF...
+2238/2238 [==============================] - 499s 222ms/step
+Predicting Test...
+636/636 [==============================] - 139s 219ms/step
+>>>> FOLD 2 Jaccard = 0.6888532596323218
+
+
+>>>> OVERALL 3Fold CV Jaccard = 0.6921056924850715
+[0.695358125337821, 0.6888532596323218]
